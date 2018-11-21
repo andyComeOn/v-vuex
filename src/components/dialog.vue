@@ -2,7 +2,7 @@
     <div class="dialog">
 
         <!-- 使用vuex的bak -->
-        <el-dialog :visible.sync="$store.state.show"></el-dialog>
+        <el-dialog title="dialog" :visible.sync="$store.state.dialog.show"></el-dialog>
         <!-- <el-dialog :visible.sync="currentShow"></el-dialog> -->
 
     </div>

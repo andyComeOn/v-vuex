@@ -6,11 +6,11 @@ import Father from '@/components/Father'
 Vue.use(Router)
 
 export default new Router({
-  routes: [
-    {
-      path: '/',
-      name: 'Father',
-      component: Father
-    }
-  ]
+	routes: [
+		{
+			path: '/',
+			name: 'Father',
+			component: Father
+		}
+	]
 })
