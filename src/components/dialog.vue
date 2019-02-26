@@ -1,10 +1,8 @@
 <template>
     <div class="dialog">
-
         <!-- 使用vuex的bak -->
         <el-dialog title="dialog" :visible.sync="$store.state.dialog.show"></el-dialog>
         <!-- <el-dialog :visible.sync="currentShow"></el-dialog> -->
-
     </div>
 </template>
 
@@ -24,6 +22,6 @@ export default {
     // }
 };
 </script>
-<!-- Add "scoped" attribute to limit CSS to this component only -->
+
 <style scoped>
 </style>

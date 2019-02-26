@@ -11,20 +11,16 @@
         <!-- <t-dialog :show.sync="show"></t-dialog> -->
 
         <div style="">
-
             <!-- <a href="javascript:;" @click="$store.state.dialogTab.dialogTabShow = true">打开嵌套表格的 Dialog</a> -->
             <!-- $store.dispatch('switch_dialog_tab') -->
 			<a href="javascript:;" @click="$store.dispatch('switch_dialog_tab')">打开嵌套表格的 Dialog</a>
         </div>
+        
         <m-dialog></m-dialog>
         <tab-dialog></tab-dialog>
         
-
-        
         <el-button v-show="$store.getters.notshow" type="primary" icon="el-icon-edit" circle></el-button>
 		<el-button v-show="$store.getters.no_show" type="danger" icon="el-icon-delete" circle></el-button>
-		
-
     </div>
 </template>
 

@@ -1,6 +1,5 @@
 <template>
     <div class="dialogTab">
-
         <!-- 使用vuex的bak -->
         <el-dialog title="收货地址" :visible.sync="$store.state.dialogTab.dialogTabShow">
             <el-table :data="gridData">
@@ -10,7 +9,6 @@
             </el-table>
         </el-dialog>
         <!-- <el-dialog :visible.sync="currentShow"></el-dialog> -->
-
     </div>
 </template>
 
@@ -44,6 +42,6 @@ export default {
     }
 };
 </script>
-<!-- Add "scoped" attribute to limit CSS to this component only -->
+
 <style scoped>
 </style>

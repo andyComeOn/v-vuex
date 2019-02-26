@@ -12,11 +12,9 @@ export default {
 			state.show = true;
 		}
 	},
-	
 	getters: {
 		notshow(state){
 			return !state.show
 		}
 	},
-	
 }
