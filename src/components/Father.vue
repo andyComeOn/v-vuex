@@ -21,6 +21,12 @@
         
         <el-button v-show="$store.getters.notshow" type="primary" icon="el-icon-edit" circle></el-button>
 		<el-button v-show="$store.getters.no_show" type="danger" icon="el-icon-delete" circle></el-button>
+
+        <el-button type="primary" icon="el-icon-delete" circle @click="kk"></el-button>
+
+        <mu-dialog width="360" transition="slide-bottom" fullscreen :open.sync="zbCityVisible">
+            
+        </mu-dialog>
     </div>
 </template>
 
@@ -36,15 +42,33 @@ export default {
     data() {
         return {
             // show: false
+            zbCityVisible: false
         };
 	},
 	methods: {
 		dialog_tab(){
 			// if () {}
-		}
+        },
+        kk () {
+            this.zbCityVisible = true;
+        }
 	}
 };
 </script>
 
 <style scoped>
+
+/* el-button el-button--primary is-circle */
+.el-button {
+    width: 50px;
+    height: 50px;
+}
+.el-button /deep/ .el-icon-edit:before {
+    /* content: "\E61C"; */
+    content: "\E612"; 
+}
+
+.mu-dialog-wrapper /deep/ .mu-dialog-body {
+  height: 100%;
+}
 </style>

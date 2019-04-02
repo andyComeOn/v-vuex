@@ -9,6 +9,10 @@ import store from './store'
 // import Vuex from 'vuex'
 Vue.config.productionTip = false
 Vue.use(ElementUI)
+// 引入muse-ui
+import MuseUI from 'muse-ui';
+import 'muse-ui/dist/muse-ui.css';
+Vue.use(MuseUI);
 // Vue.use(Vuex)
 // var store = new Vuex.Store({
 // 	state: {
